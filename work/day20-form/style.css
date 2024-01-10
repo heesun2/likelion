@@ -1,0 +1,113 @@
+/* reset */
+body{
+    margin: unset;
+}
+
+img{
+    max-width: 100%;
+}
+
+fieldset,
+legend,
+label,
+button,
+input {
+    all: unset;
+    display: block;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+/* commons */
+.button{
+    background-color: dodgerblue;
+    color: white;
+    display: inline-block;
+    height: 48px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.button.type_block{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.button:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 0 4px rgb(0, 0, 0 / .2);
+}
+
+/* typo */
+:root{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* component */
+.cover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 480px;
+    display: none;
+}
+
+.cover-sec{
+    height: 100%;
+
+}
+
+
+
+.main-inside{
+    width: 480px;
+}
+
+.form-title{
+    font-size: 24px;
+    font-weight: ;
+}
+
+.form-field {
+    margin: 20px 0;
+
+}
+
+.form-label{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.form-input{
+    border: 4px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0 / .2);
+    transition: all .4s;
+
+}
+
+.form-input:focus-within{
+    border-color: dodgerblue;
+    box-shadow: 0 0 0 4px rgb(0, 0, 0 / .2);
+}
+
+
+
+@media ( min-width: 960px ){
+    .cover {
+        display: block;
+    }
+
+    .cover + .main {
+        margin-left: 480px;
+    }
+}

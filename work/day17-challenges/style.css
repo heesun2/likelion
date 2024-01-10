@@ -1,0 +1,247 @@
+/*reset */
+body{
+    margin: unset;
+    padding: unset;
+}
+
+h1, h2, p{
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+button {
+    all: unset;
+    display: inline-block;
+}
+
+
+
+:root{
+    --color-white:#fff;
+    --color-gray-10:#eee;
+    --color-gray-20:#d9d9d9;
+    --color-gray-30:#999;
+    --color-gray-40:#666;
+    --color-gray-50:#444;
+    --color-gray-60:#333;
+    --color-gray-90:#111;
+
+    --color-blue:#0468FF;
+    --color-deepblue: #003d9a;
+}
+
+/* typo */
+h1, h2, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* conponent */
+body {
+    position: relative;
+    background-image: url(images/background.png);
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1076px;
+    min-height: 538px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar{
+    width: 244px;
+    height: auto;
+    flex-basis: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent), url(images/sidebar-background.png);
+    background-size: cover;
+    border-radius: 6px 0 0 6px;
+    padding: 16px;
+}
+
+.sidebar-title-wrapper{
+    display: flex;
+}
+
+.sidebar-title{
+    box-shadow: inset 0 -0.4em 0 0 var(--color-gray-50);
+    width: auto;
+    height: 40px;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+}
+
+.icon-coffee{
+    display: block;
+    margin-left: auto;
+    bottom: 0;
+    width: 79px;
+    height: 71.5px;
+    margin-top: -14px;
+}
+
+
+.sidebar-text{
+    width: 100%;
+    height: 100px;
+    color:var(--color-gray-30);
+    margin-top: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    font-style: nomal;
+    line-height: 140%;
+}
+
+.button{
+    width: 100%;
+    height: auto;
+}
+
+.button-LOCATION{
+    background-color: var(--color-blue);
+    height: 22px;
+    width: 100%;
+    color: var(--color-white);
+    border-radius: 2px;
+    
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 2.16px;
+    text-align: center;
+}
+
+.button-LOCATION:hover{
+    background-color: var(--color-deepblue);
+    transition: all .3s;
+}
+
+.button-SHARE{
+    background-color: var(--color-gray-20);
+    height: 22px;
+    width: 100%;
+    color: var(--color-gray-60);
+    border-radius: 2px;
+    
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 2.16px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.button-SHARE:hover{
+    background-color: var(--color-gray-40);
+    transition: all .3s;
+}
+
+.main{
+    flex-grow: 1;
+    background-color: var(--color-white);
+    border-radius: 0 6px 6px 0;
+}
+
+.main-wrapper{
+    margin: 16px;
+}
+
+.about{
+    /* box-shadow: inset 0 0 20px red; */
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--color-gray-40);
+    border-bottom: 8px solid var(--color-gray-10);
+    display: flex;
+    justify-content: space-between; /* 요소들을 좌우에 정렬하는 속성 추가 */
+    align-items: center; /* 요소들을 수직 가운데로 정렬하는 속성 추가 */
+}
+
+.title::after{
+    content: 'VIEW ALL';
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+
+    display: inline-block;
+    background-color: var(--color-gray-10);
+    height: 18px;
+    border-radius: 56px;
+    padding: 0 14px;
+}
+
+.img-cover{
+    display: flex;
+    gap: 16px;
+}
+
+.img-box{
+    width: 120px;
+    height: 120px;
+    margin-top: 16px;
+}
+
+
+.reviews{
+    margin-top: 30px;
+}
+
+
+.reviews-cover{
+    margin-top: 16px;
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    display: flex;
+    gap: 16px;
+}
+
+.review{
+    width: 256px;
+    background-color: var(--color-gray-10);
+    border-radius: 6px;
+}
+
+.text-cover{
+    padding: 16px;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-text{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray-60);
+    line-height: 140%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
+.review-name{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray-60);
+    line-height: 140%;
+    text-align: end;
+
+}
