@@ -1,0 +1,13 @@
+body {
+	margin: unset;
+}
+
+.container {
+	display: flex;
+	height: 500vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url(images/background2.png);
+	background-position: center;
+	background-size: cover;
+}

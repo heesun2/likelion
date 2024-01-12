@@ -1,0 +1,38 @@
+.modal {
+    background-color: rgba(0, 0, 0 , .8);
+    position: fixed;
+    inset: 0;
+    /* padding: 40px; */
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+}
+
+.modal-inside{
+    box-shadow: 0 0 20px lime;
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+}
+
+.window{
+    background-color: white;
+    color: #333;
+}
+
+.window-header{
+    background-color: #D1EBDA;
+    padding: 12px;
+}
+
+.window-main{
+    padding: 12px;
+}
+
+.window-footer{
+    background-color: #eee;
+    padding: 12px;
+}
