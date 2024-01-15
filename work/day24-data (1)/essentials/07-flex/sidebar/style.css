@@ -1,0 +1,27 @@
+body {
+    margin: 0;    
+}
+
+body {
+    background-color: #ddd;
+}
+
+.wrapper {
+    background-color: white;
+    width: 960px;
+    margin: 50px auto;
+    border: 10px solid dodgerblue;
+}
+
+.sidebar {
+    background-color: orange;
+}
+
+.contents {
+    border: 10px solid red;
+}
+
+
+
+
+
